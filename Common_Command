@@ -1,0 +1,31 @@
+show dbs--Show the list of DataBases
+
+
+
+
+
+
+
+db.car.insert({
+name:'Ford',
+make:'Mustang',
+year:'1970'
+})
+
+db.car.update({
+name:'Ford'
+},
+{$set:{
+make: 'Mustang SRT'
+}
+})
+
+db.car.update({
+name:'Ford'
+},
+{$set:{
+transmission: 'Auto/Manual'
+}
+},{$upsert:true})
+
+db.car.remove({name:'Ford'})
