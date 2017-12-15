@@ -1,4 +1,6 @@
 show dbs--Show the list of DataBases
+use--To open a existing DB/ Create a New DB
+      e.g: use Booked_Prod
 
 
 
