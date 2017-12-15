@@ -9,7 +9,7 @@ db.<Collection Name>.drop()
 
 
 
---
+--DMLs
 db.car.insert({
 name:'Ford',
 make:'Mustang',
