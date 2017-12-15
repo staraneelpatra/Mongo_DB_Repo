@@ -1,13 +1,12 @@
 show dbs--Show the list of DataBases
 use <dbname>--To open a existing DB/ Create a New DB
       e.g: use Booked_Prod
-db.dropDatabase()
-show collections----Show the list of Collections
-db.createCollections("cars")
-db.<Collection Name>.drop()
-
-
-
+db.dropDatabase()--Delete a DataBases
+show collections--Show the list of Collections
+db.createCollections("cars")--Create createCollections
+db.<Collection Name>.drop()--Delete Collection
+db.car.find().pretty()--View all documents
+db.car.find({name:'Ford'}).pretty()--View Specific Document
 
 --DMLs
 db.car.insert({
@@ -33,3 +32,8 @@ transmission: 'Auto/Manual'
 },{$upsert:true})
 
 db.car.remove({name:'Ford'})
+
+--Lopping javascript
+for(var i=0;i<10;i++){
+db.car.insert({
+name:'createdBYloop-'+i})}
