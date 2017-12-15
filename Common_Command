@@ -1,13 +1,15 @@
 show dbs--Show the list of DataBases
-use--To open a existing DB/ Create a New DB
+use <dbname>--To open a existing DB/ Create a New DB
       e.g: use Booked_Prod
+db.dropDatabase()
+show collections----Show the list of Collections
+db.createCollections("cars")
+db.<Collection Name>.drop()
 
 
 
 
-
-
-
+--
 db.car.insert({
 name:'Ford',
 make:'Mustang',
