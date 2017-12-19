@@ -1,13 +1,17 @@
+//Database 
 show dbs--Show the list of DataBases
 use <dbname>--To open a existing DB/ Create a New DB
       e.g: use Student_Tab
 db.dropDatabase()--Delete a DataBases
+
+//Collections
 show collections--Show the list of Collections
 db.createCollections("cars")--Create createCollections
 db.<Collection Name>.drop()--Delete Collection
 db.car.find().pretty()--View all documents
 db.car.find({name:'Ford'}).pretty()--View Specific Document
 
+//Documents
 --DMLs
 db.car.insert({
 name:'Ford',
