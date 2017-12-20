@@ -1,4 +1,4 @@
-//Database 
+//Database
 show dbs--Show the list of DataBases
 use <dbname>--To open a existing DB/ Create a New DB
       e.g: use Student_Tab
@@ -41,3 +41,15 @@ db.car.remove({name:'Ford'})
 for(var i=0;i<10;i++){
 db.car.insert({
 name:'createdBYloop-'+i})}
+
+//Qurey
+b.student.find({})
+db.student.find({'name': 'Rachel'})
+db.student.find({units: {$gt: 6}})
+db.student.find({units: {$lt: 7}})
+db.student.find({classes: {$in: ['history']}})
+
+db.student.find({classes: {$in: ['history']}}).sort({units: -1})    // ascending
+db.student.find({}).sort({name: 1})    // descending
+
+db.student.find({}).sort({name: 1}).limit(2)
