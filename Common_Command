@@ -1,4 +1,5 @@
 //Database
+db.version()
 show dbs--Show the list of DataBases
 use <dbname>--To open a existing DB/ Create a New DB
       e.g: use Student_Tab
