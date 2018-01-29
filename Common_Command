@@ -47,6 +47,7 @@ name:'createdBYloop-'+i})}
 b.student.find({})
 db.student.find({'name': 'Rachel'})
 db.BankData.find({first_name:'MARK'},{last_name:1,_id:0})
+> db.BankData.find({first_name:'MARK'},{ last_name:1,'accounts.currency':1})[8]
 db.student.find({units: {$gt: 6}})
 db.student.find({units: {$lt: 7}})
 db.student.find({classes: {$in: ['history']}})
