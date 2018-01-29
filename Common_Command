@@ -46,6 +46,7 @@ name:'createdBYloop-'+i})}
 //Qurey
 b.student.find({})
 db.student.find({'name': 'Rachel'})
+db.BankData.find({first_name:'MARK'},{last_name:1,_id:0})
 db.student.find({units: {$gt: 6}})
 db.student.find({units: {$lt: 7}})
 db.student.find({classes: {$in: ['history']}})
@@ -54,3 +55,7 @@ db.student.find({classes: {$in: ['history']}}).sort({units: -1})    // ascending
 db.student.find({}).sort({name: 1})    // descending
 
 db.student.find({}).sort({name: 1}).limit(2)
+
+//Operators
+//$or:
+db.BankData.find({$or:[{last_name:'SMITH'},{last_name:'MARTINEZ'}]}).count()
