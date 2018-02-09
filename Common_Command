@@ -48,10 +48,14 @@ b.student.find({})
 db.student.find({'name': 'Rachel'})
 db.BankData.find({first_name:'MARK'},{last_name:1,_id:0})
 > db.BankData.find({first_name:'MARK'},{ last_name:1,'accounts.currency':1})[8]
+db.BankData.find({$or:[{first_name:'MARK'},{ last_name:'SMITH'}]},{first_name:1}).count()
 db.student.find({units: {$gt: 6}})
 db.student.find({units: {$lt: 7}})
 db.student.find({classes: {$in: ['history']}})
-
+ db.BankData.find({accounts:{$elemMatch:{'account_balance':{$gt:9000},'currency': 'USD'}}}).count()
+ db.BankData.find({$and:[{first_name:'MARK'},{accounts:{$elemMatch:{account_balance:{$gt:70000},currency:'USD'}}}]},{first_name:1,last_name:1,_id:0})
+ .pretty().limit(3).sort({last_name:-1})
+ 
 db.student.find({classes: {$in: ['history']}}).sort({units: -1})    // ascending
 db.student.find({}).sort({name: 1})    // descending
 
