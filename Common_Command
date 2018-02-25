@@ -60,7 +60,7 @@ db.student.find({classes: {$in: ['history']}}).sort({units: -1})    // ascending
 db.student.find({}).sort({name: 1})    // descending
 
 db.student.find({}).sort({name: 1}).limit(2)
-
+---------------
 //Operators
 //$or:
 db.BankData.find({$or:[{last_name:'SMITH'},{last_name:'MARTINEZ'}]}).count()
