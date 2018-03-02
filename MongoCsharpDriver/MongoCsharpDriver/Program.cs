@@ -18,10 +18,9 @@ namespace MongoCsharpDriver
                 Auther = "Tanya",
                 Category = "NoSQL DBMS"
             };
-            for (int i = 0; i < 5; i++)
-            {
+           
                 collection.InsertOne(bookStore);
-            }
+           
             Console.WriteLine("inserted");
         }
     }
