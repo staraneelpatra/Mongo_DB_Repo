@@ -1,0 +1,16 @@
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/MongoCsharpDriver.exe
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/MongoCsharpDriver.pdb
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/DnsClient.dll
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/MongoDB.Bson.dll
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/MongoDB.Driver.Core.dll
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/MongoDB.Driver.dll
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/System.Buffers.dll
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/System.Runtime.InteropServices.RuntimeInformation.dll
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/MongoDB.Bson.xml
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/DnsClient.xml
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/MongoDB.Driver.Core.xml
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/bin/Debug/MongoDB.Driver.xml
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/obj/x86/Debug/MongoCsharpDriver.csprojResolveAssemblyReference.cache
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/obj/x86/Debug/MongoCsharpDriver.csproj.CoreCompileInputs.cache
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/obj/x86/Debug/MongoCsharpDriver.exe
+/Users/anilpatra/Projects/Mongo_DB_Repo/MongoCsharpDriver/MongoCsharpDriver/obj/x86/Debug/MongoCsharpDriver.pdb
