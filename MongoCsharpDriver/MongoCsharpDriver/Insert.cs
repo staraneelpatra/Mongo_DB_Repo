@@ -5,12 +5,13 @@ namespace MongoCsharpDriver
 {
     public class Insert
     {
-        public Insert()
+        public void InsertData()
         {
             MongoClient client = new MongoClient();
             var db = client.GetDatabase("LibraryDB");
             var collection = db.GetCollection<BookStore>("BookStore");
             var collection1 = db.GetCollection<BsonDocument>("Data");
+
             BookStore bookStore = new BookStore
             {
                 BookTitle = "MongoDB Basics",
