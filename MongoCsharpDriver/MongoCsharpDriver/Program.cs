@@ -21,6 +21,8 @@ namespace MongoCsharpDriver
            
                 collection.InsertOne(bookStore);
            
+            collection.Find(new BsonDocument()).ForEachAsync(X => Console.WriteLine(X));
+
             Console.WriteLine("inserted");
         }
     }
