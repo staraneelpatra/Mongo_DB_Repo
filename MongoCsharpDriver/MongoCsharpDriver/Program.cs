@@ -11,6 +11,7 @@ namespace MongoCsharpDriver
             MongoClient client = new MongoClient();
             var db = client.GetDatabase("LibraryDB");
             var collection = db.GetCollection<BookStore>("BookStore");
+            var collection1 = db.GetCollection<BsonDocument>("Data");
             BookStore bookStore = new BookStore
             {
                 BookTitle = "MongoDB Basics",
@@ -18,10 +19,20 @@ namespace MongoCsharpDriver
                 Auther = "Tanya",
                 Category = "NoSQL DBMS"
             };
-           
-                collection.InsertOne(bookStore);
-           
-            collection.Find(new BsonDocument()).ForEachAsync(X => Console.WriteLine(X));
+            collection.InsertOne(bookStore);
+
+            var doc = new BsonDocument()
+            {
+                { "name", "MongoDB" },
+                { "type", "Database" },
+                { "count", 1 },
+                { "info", new BsonDocument
+                    {
+                        { "x", 203 },
+                        { "y", 102 }
+                    }}
+               };
+           collection1.InsertOne(doc);
 
             Console.WriteLine("inserted");
         }
