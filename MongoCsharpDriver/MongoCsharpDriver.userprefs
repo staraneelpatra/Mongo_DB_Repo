@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{B1F18729-3F28-4CC2-9AED-49D2D53FA4BB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MongoCsharpDriver/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MongoCsharpDriver/Find.cs">
     <Files>
       <File FileName="MongoCsharpDriver/BookStore.cs" Line="12" Column="25" />
-      <File FileName="MongoCsharpDriver/Program.cs" Line="14" Column="1" />
+      <File FileName="MongoCsharpDriver/Program.cs" Line="16" Column="1" />
+      <File FileName="MongoCsharpDriver/Insert.cs" Line="15" Column="14" />
+      <File FileName="MongoCsharpDriver/Find.cs" Line="6" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
