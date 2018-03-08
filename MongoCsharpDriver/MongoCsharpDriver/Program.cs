@@ -13,6 +13,7 @@ namespace MongoCsharpDriver
 
             Find find = new Find();
             find.FindCount();
+            find.Findfirst();
         }
     }
 }

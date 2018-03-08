@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="MongoCsharpDriver/Find.cs">
     <Files>
       <File FileName="MongoCsharpDriver/BookStore.cs" Line="12" Column="25" />
-      <File FileName="MongoCsharpDriver/Program.cs" Line="13" Column="10" />
-      <File FileName="MongoCsharpDriver/Insert.cs" Line="40" Column="6" />
-      <File FileName="MongoCsharpDriver/Find.cs" Line="8" Column="13" />
+      <File FileName="MongoCsharpDriver/Program.cs" Line="20" Column="1" />
+      <File FileName="MongoCsharpDriver/Insert.cs" Line="9" Column="10" />
+      <File FileName="MongoCsharpDriver/Find.cs" Line="28" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

@@ -10,15 +10,23 @@ namespace MongoCsharpDriver
 
             MongoClient client = new MongoClient();
             var db = client.GetDatabase("BankDB");
-            var collection = db.GetCollection<BookStore>("BankData");
+            var collection = db.GetCollection<BsonDocument>("BankData");
 
             //Count Number of Documents
             var count = collection.Count(new BsonDocument());
             Console.Write("Count = "+count);
-
-
-
-
         }
+
+        public void Findfirst(){
+            MongoClient client = new MongoClient();
+            var db = client.GetDatabase("BankDB");
+            var collection = db.GetCollection<BsonDocument>("BankData");
+
+            //Retrive Data
+
+            var document = collection.Find(new BsonDocument()).FirstOrDefault();
+            Console.WriteLine(document);
+        }
+
     }
 }
