@@ -28,5 +28,18 @@ namespace MongoCsharpDriver
             Console.WriteLine(document);
         }
 
+        public void Findall(){
+            MongoClient client = new MongoClient();
+            var db = client.GetDatabase("BankDB");
+            var collection = db.GetCollection<BsonDocument>("BankData");
+            var document = collection.Find(new BsonDocument()).ToList();
+            foreach (var item in document)
+            {
+                Console.WriteLine(item);
+            }
+
+
+        }
+
     }
 }

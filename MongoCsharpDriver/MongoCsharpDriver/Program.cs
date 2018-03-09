@@ -12,8 +12,9 @@ namespace MongoCsharpDriver
            // insert.InsertData();
 
             Find find = new Find();
-            find.FindCount();
-            find.Findfirst();
+            //find.FindCount();
+            //find.Findfirst();
+            find.Findall();
         }
     }
 }
