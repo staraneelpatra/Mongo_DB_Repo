@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using MongoDB.Bson;
 using MongoDB.Driver;
 namespace MongoCsharpDriver
@@ -33,7 +34,6 @@ namespace MongoCsharpDriver
                     }}
                };
             collection1.InsertOne(doc);
-
             Console.WriteLine("inserted");
             
         }

@@ -1,6 +1,7 @@
 ﻿using System;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using System.Linq;
 namespace MongoCsharpDriver
 {
     public class Find
@@ -37,9 +38,29 @@ namespace MongoCsharpDriver
             {
                 Console.WriteLine(item);
             }
-
-
         }
 
+        public void Findany()
+        {
+            try
+            {
+                MongoClient client = new MongoClient();
+                var db = client.GetDatabase("LibraryDB");
+                var collection = db.GetCollection<BookStore>("BookStore");
+                var info = collection.Find(new BsonDocument()).ToList();
+                var name = info.Where(x => x.Auther == "Anil").Select(x => x.Category).FirstOrDefault();
+                Console.WriteLine("Name is " + name);
+                var desc = info.Select(x => x.Category);
+                foreach (var q in desc)
+                {
+                    Console.WriteLine("Name is " + q);
+                }
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }  
     }
 }
