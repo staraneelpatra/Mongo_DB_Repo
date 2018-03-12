@@ -62,5 +62,55 @@ namespace MongoCsharpDriver
                 throw ex;
             }
         }  
+
+        public void FindCursor(){
+            try
+            {
+                MongoClient client = new MongoClient();
+                var db = client.GetDatabase("LibraryDB");
+                var collections = db.GetCollection<BookStore>("BookStore");
+                var cursor=collections.Find(new BsonDocument()).ToCursor();
+               
+                    foreach (var doc1 in cursor.ToEnumerable())
+                    {
+                        Console.WriteLine("Output is " + doc1.ToJson());
+                    }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public void FindFilter(){
+            MongoClient client = new MongoClient();
+            var db = client.GetDatabase("BankDB");
+            var collections = db.GetCollection<BsonDocument>("BankData");
+            var filter = Builders<BsonDocument>.Filter.Eq("last_name", "SMITH");
+            var doc = collections.Find(filter).First();
+            Console.WriteLine(doc.ToJson());
+        }
+
+        public void FindFilterMultiDoc(){
+            try
+            {
+                MongoClient client = new MongoClient();
+                var db = client.GetDatabase("BankDB");
+                var collection = db.GetCollection<BsonDocument>("BankData");
+                var builder = Builders<BsonDocument>.Filter;
+                var filter = builder.Eq("first_name", "ANIL") | builder.Eq("last_name", "SMITH");
+                var cursor = collection.Find(filter).ToCursor();
+                foreach(var doc in cursor.ToEnumerable()){
+                    Console.WriteLine(doc.ToJson());
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
+ 

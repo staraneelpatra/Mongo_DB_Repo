@@ -15,7 +15,10 @@ namespace MongoCsharpDriver
             //find.FindCount();
             //find.Findfirst();
             //find.Findall();
-            find.Findany();
+            //find.Findany();
+            //find.FindCursor();
+            //find.FindFilter();
+            find.FindFilterMultiDoc();
         }
     }
 }
