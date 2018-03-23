@@ -111,6 +111,23 @@ namespace MongoCsharpDriver
                 throw ex;
             }
         }
+        public void Sorting()
+        {
+            MongoClient client = new MongoClient();
+            var db = client.GetDatabase("BankDB");
+            var collection = db.GetCollection<BsonDocument>("BankData");
+            var filterbuilder = Builders<BsonDocument>.Filter;
+           // var sortbuilder = Builders<BsonDocument>.Sort.Ascending("first_name");
+            var filterbyname = filterbuilder.Eq("last_name", "JOHNSON");
+            var sortbuilder = Builders<BsonDocument>.Sort;
+            var sortasc = sortbuilder.Descending("first_name");
+           // var cursor = collection.Find(filterbyname).Sort(sortbuilder).ToCursor();
+            var cursor = collection.Find(filterbyname).Sort(sortasc).ToCursor();
+            foreach(var doc in cursor.ToEnumerable()){
+                Console.WriteLine(doc.ToJson());
+            }
+        }
+
     }
 }
  

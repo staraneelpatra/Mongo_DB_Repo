@@ -55,6 +55,7 @@
     <Compile Include="BookStore.cs" />
     <Compile Include="Insert.cs" />
     <Compile Include="Find.cs" />
+    <Compile Include="Sorting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
