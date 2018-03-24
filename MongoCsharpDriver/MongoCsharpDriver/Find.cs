@@ -112,6 +112,7 @@ namespace MongoCsharpDriver
                 throw ex;
             }
         }
+
         public void Sorting()
         {
             MongoClient client = new MongoClient();
@@ -126,6 +127,17 @@ namespace MongoCsharpDriver
             var cursor = collection.Find(filterbyname).Sort(sortasc).ToCursor();
             foreach(var doc in cursor.ToEnumerable()){
                 Console.WriteLine(doc.ToJson());
+            }
+        }
+
+        public void Projection(){
+            MongoClient client = new MongoClient();
+            var db = client.GetDatabase("BankDB");
+            var collection = db.GetCollection<BsonDocument>("BankData");
+            var projection = Builders<BsonDocument>.Projection.Exclude("accounts");
+            var cursor = collection.Find(new BsonDocument()).Project(projection).ToCursor();
+            foreach (var doc in cursor.ToEnumerable()) {
+                Console.WriteLine(doc);
             }
         }
 
