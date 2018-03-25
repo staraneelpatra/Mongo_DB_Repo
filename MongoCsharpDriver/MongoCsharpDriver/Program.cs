@@ -20,7 +20,10 @@ namespace MongoCsharpDriver
             //find.FindFilter();
             //find.FindFilterMultiDoc();
             //find.Sorting();
-            find.Projection();
+            //find.Projection();
+
+            Update _update = new Update();
+            _update.UpdateOne();
         }
     }
 }
