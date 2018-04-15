@@ -56,9 +56,15 @@
     <Compile Include="Insert.cs" />
     <Compile Include="Find.cs" />
     <Compile Include="Update.cs" />
+    <Compile Include="EntityClasses\Employee.cs" />
+    <Compile Include="EntityClasses\Keys.cs" />
+    <Compile Include="EntityClasses\Lockers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EntityClasses\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,8 +9,8 @@ namespace MongoCsharpDriver
         public static void Main(string[] args)
         {   
             Insert insert = new Insert();
-           // insert.InsertData();
-
+            //insert.InsertData();
+            insert.InsertDB();
             Find find = new Find();
             //find.FindCount();
             //find.Findfirst();
@@ -22,8 +22,11 @@ namespace MongoCsharpDriver
             //find.Sorting();
             //find.Projection();
 
-            Update _update = new Update();
-            _update.UpdateOne();
+            //Update _update = new Update();
+            //_update.UpdateOne();
+
+
+
         }
     }
 }
