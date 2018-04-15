@@ -12,9 +12,9 @@ namespace MongoCsharpDriver.EntityClasses
         public string _LockerType { get; set; }
 
         [BsonElement("Floor")]
-        public string _Floor { get; set; }
+        public int _Floor { get; set; }
 
         [BsonElement("NoOfKeys")]
-        public string _NoOfKeys { get; set; }
+        public int _NoOfKeys { get; set; }
     }
 }

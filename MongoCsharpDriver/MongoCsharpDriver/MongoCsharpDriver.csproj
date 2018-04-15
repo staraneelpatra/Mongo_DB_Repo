@@ -59,6 +59,7 @@
     <Compile Include="EntityClasses\Employee.cs" />
     <Compile Include="EntityClasses\Keys.cs" />
     <Compile Include="EntityClasses\Lockers.cs" />
+    <Compile Include="EntityClasses\Vehicle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -18,12 +18,28 @@ namespace MongoCsharpDriver
 
                 Employee employeeobj = new Employee();
                 employeeobj._Key = new Keys();
+                employeeobj._Locker = new Lockers();
+                employeeobj._Vehicle = new Vehicle();
 
-                employeeobj._EmpId = 100001;
+                employeeobj._EmpId = 106752;
                 employeeobj._EmpName = "Nautam Sanghani";
+                employeeobj._ContactNo = "9090182938";
+                employeeobj._Email = "Nautam.sanghani@slkgroup.com";
+                employeeobj._Gender = "Male";
+                employeeobj._HasVehicle = true;
+
                 employeeobj._Key._KeyId = "1234";
                 employeeobj._Key._DateOfIssue = DateTime.Now;
-                    //_Locker={}
+
+                employeeobj._Locker._Floor = 2;
+                employeeobj._Locker._LockerId = "L002";
+                employeeobj._Locker._LockerType = "PegionHole";
+                employeeobj._Locker._NoOfKeys = 4;
+
+                employeeobj._Vehicle._StickerId = "420";
+                employeeobj._Vehicle._VehicleType = "16-Wheeler";
+                employeeobj._Vehicle._VehicleId = "GJ-51-NS-420";
+
 
                 collection.InsertOne(employeeobj);
                 Console.WriteLine("inserted");
