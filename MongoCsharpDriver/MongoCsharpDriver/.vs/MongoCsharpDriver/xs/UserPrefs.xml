@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{B1F18729-3F28-4CC2-9AED-49D2D53FA4BB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Find.cs">
+    <Files>
+      <File FileName="../../../POC/LockerManagement/LockerManagement/Controller/EmployeeController.cs" Line="37" Column="48" />
+      <File FileName="../../../POC/LockerManagement/LockerManagement/Repository/EmployeeRepository.cs" Line="49" Column="51" />
+      <File FileName="Find.cs" Line="93" Column="45" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/anilpatra/Apps/POC/LockerManagement/LockerManagement.Tests/Test.cs" line="13" column="1" />
+      <Breakpoint file="/Users/anilpatra/Apps/POC/LockerManagement/LockerManagement/Model/Employee.cs" line="8" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MongoCsharpDriver PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
